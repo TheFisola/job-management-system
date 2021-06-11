@@ -2,6 +2,10 @@
 
 A simple job management system
 
+**Requirements to run the application**
+- Postgres SQL
+- JAVA 11
+
 ### **Goal of the system**
 
 The goal of this system is to handle the
