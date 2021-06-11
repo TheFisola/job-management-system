@@ -1,5 +1,7 @@
 # **JOB MANAGEMENT SYSTEM**
 
+A simple job management system
+
 ### **Goal of the system**
 
 The goal of this system is to handle the
