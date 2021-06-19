@@ -42,7 +42,8 @@ The system allows for jobs to be created with the intending job implementation u
 
 A sample job creation request for an email job:
 
-`{
+```
+{
 "requestUrl": "http://localhost:8091/sample-service/email",
 "requestPayload": "{\"from\":\"randomemail@gmail.com\",\"to\":\"randomemail@yahoo.com\",\"body\":\"Random Email Body\",\"subject\":\"Random Email Subject!\"}",
 "tag": "send-email",
@@ -51,7 +52,8 @@ A sample job creation request for an email job:
 },
 "executionType": "SCHEDULED",
 "scheduledExecutionDate": "2021-06-10 07:45:22"
-}`
+}
+```
 
 requestUrl - The Api that houses the actual job execution(In this case, send email implementation).
 
@@ -91,7 +93,8 @@ Execution types are provided for the client to define the type of execution:
 
 **Sample of a job in final state**
 
-`{
+```
+{
 "id": "a05fe68c-149e-408c-bab6-1243c101b48c",
 "requestUrl": "http://localhost:8091/sample-service/email",
 "requestPayload": "{\"from\":\"randomemail@gmail.com\",\"to\":\"randomemail@yahoo.com\",\"body\":\"Random Email Body\",\"subject\":\"Random Email Subject!\"}",
@@ -103,7 +106,8 @@ Execution types are provided for the client to define the type of execution:
 "dateExecuted": "2021-06-10 18:46:12",
 "dateCreated": "2021-06-10 12:15:34",
 "dateUpdated": "2021-06-10 12:19:42"
-}`
+}
+```
 
 **Possible Improvements**
 
@@ -116,7 +120,8 @@ A sample job implementation is located on localhost:{YOUR_PORT}/sample-service/e
 
 A sample job request to this would look like;
 
-`{
+```
+{
 "requestUrl": "http://localhost:8091/sample-service/email",
 "requestPayload": "{\"from\":\"randomemail@gmail.com\",\"to\":\"randomemail@yahoo.com\",\"body\":\"Random Email Body\",\"subject\":\"Random Email Subject!\"}",
 "tag": "send-email",
@@ -124,6 +129,7 @@ A sample job request to this would look like;
 "x-api-region": "USA"
 },
 "executionType": "INSTANT",
-}`
+}
+```
 
 This would execute the job instantly.
